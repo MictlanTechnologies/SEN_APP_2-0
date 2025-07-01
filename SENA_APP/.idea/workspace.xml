@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65b737f4-7406-40d9-9ae6-04afae2f8676" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/CuestionarioPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/CuestionarioSwing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/EjercicioInteractivoPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/ExtrasPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/JuegoTextoPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/LeccionesAppPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/ModuloAvanzadoPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/ModuloBasicoPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/ModuloIntermedioPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/SwingApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/VideoLessonPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/VideoPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/app/LoginSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/app/LoginSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/Cuestionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/Cuestionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/EjercicioInteractivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/EjercicioInteractivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/Extras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/Extras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/JuegoTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/JuegoTexto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/LeccionesApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/LeccionesApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloAvanzado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloAvanzado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloBasico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloBasico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloIntermedio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloIntermedio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/ModuloAvanzadoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/ModuloAvanzadoPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/ModuloBasicoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/ModuloBasicoPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/ModuloIntermedioPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/gui/ModuloIntermedioPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +35,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.LoginSystem.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.SwingApp.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "C:/SENA_app_/SENA_APP/src/main/java/org/Main.java",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LoginSystem.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SwingApp.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/SENA_app_/SENA_APP/src/main/java/org/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="SwingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.SenApp.gui.SwingApp" />
