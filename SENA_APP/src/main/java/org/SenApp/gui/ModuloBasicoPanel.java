@@ -15,7 +15,7 @@ public class ModuloBasicoPanel extends JPanel {
         this.container = container;
         setLayout(new GridLayout(0,1,10,10));
 
-        JButton l1 = new JButton("Introducci\u00f3n a la Lengua de Se\u00f1as")
+        JButton l1 = new JButton("Introducci\u00f3n a la Lengua de Se\u00f1as");
         JButton l2 = new JButton("Alfabeto Manual");
         JButton l3 = new JButton("Saludos y Presentaciones");
         JButton back = new JButton("Regresar");
