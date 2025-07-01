@@ -20,7 +20,7 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">none</property>
         <property name="hibernate.transform_hbm_xml.enabled">true</property>
-        <mapping class="org.senaa.model.Usuario"/>
-        <mapping class="org.senaa.model.ProgresoUsuario"/>
+        <mapping class="org.SenApp.model.Usuario"/>
+        <mapping class="org.SenApp.model.ProgresoUsuario"/>
     </session-factory>
 </hibernate-configuration>

@@ -1,9 +1,9 @@
-package lecciones;
+package org.SenApp.lecciones;
 
-import SistemaReportes.Reportes;
+import org.SenApp.SistemaReportes.Reportes;
 import java.util.Scanner;
 
-import static lecciones.JuegoTexto.usuario;
+import static org.SenApp.lecciones.JuegoTexto.usuario;
 
 public class EjercicioInteractivo {
     public static void iniciar() {

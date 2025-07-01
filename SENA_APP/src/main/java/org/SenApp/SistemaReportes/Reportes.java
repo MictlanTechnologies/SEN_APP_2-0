@@ -1,12 +1,12 @@
-package SistemaReportes;
+package org.SenApp.SistemaReportes;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.senaa.model.ProgresoUsuario;
-import org.senaa.util.HibernateUtil;
+import org.SenApp.model.ProgresoUsuario;
+import org.SenApp.Util.HibernateUtil;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import app.Usuario;
+import org.SenApp.model.Usuario;
 
 public class Reportes {
     public static void guardarProgreso(Usuario usuario, String tipoActividad, int puntaje, int total) {
@@ -20,16 +20,16 @@ public class Reportes {
         String fecha = ahora.format(formato);
 
         System.out.println(" Reporte generado:");
-        System.out.println("Usuario: " + usuario.getNombreUsuario());
+        System.out.println("Usuario: " + usuario.getNombre());
         System.out.println("Actividad: " + tipoActividad);
         System.out.println("Puntaje: " + puntaje + "/" + total);
         System.out.println("Fecha: " + fecha);
 
         // Guardar usando Hibernate
         try (Session s = HibernateUtil.getSession()) {
-            org.senaa.model.Usuario entity = s.createQuery(
+            Usuario entity = s.createQuery(
                             "from Usuario where email=:email",
-                            org.senaa.model.Usuario.class)
+                            Usuario.class)
                     .setParameter("email", usuario.getEmail())
                     .uniqueResult();
             if (entity != null) {

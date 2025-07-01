@@ -3,6 +3,7 @@ package org.SenApp.model;
 import org.hibernate.Session;
 import org.SenApp.Util.HibernateUtil;
 import org.SenApp.Util.HibernateUtil.UsuarioDAO;
+import org.SenApp.model.Usuario;
 
 public class GestorUsuarios {
     private final UsuarioDAO dao;
@@ -13,7 +14,7 @@ public class GestorUsuarios {
 
     public boolean registrar(String email, String contraseña) {
         try (Session s = HibernateUtil.getSession()) {
-            org.SenApp.model.Usuario existente = s.createQuery("from Usuario where email = :email", org.SenApp.model.Usuario.class)
+            Usuario existente = s.createQuery("from Usuario where email = :email", Usuario.class)
                     .setParameter("email", email)
                     .uniqueResult();
             if (existente != null) {
@@ -33,24 +34,24 @@ public class GestorUsuarios {
                 contador++;
             }
 
-            org.SenApp.model.Usuario nuevo = new org.SenApp.model.Usuario(email, contraseña, nombreFinal);
+            Usuario nuevo = new Usuario(email, contraseña, nombreFinal);
             dao.save(nuevo);
             System.out.println("Cuenta creada exitosamente. Tu nombre de usuario es: " + nombreFinal);
             return true;
         }
     }
 
-    public app.Usuario iniciarSesion(String email, String contraseña) {
+    public Usuario iniciarSesion(String email, String contraseña) {
         try (Session s = HibernateUtil.getSession()) {
-            org.SenApp.model.Usuario entity = s.createQuery(
+            Usuario entity = s.createQuery(
                             "from Usuario where email=:email and contrasena=:con",
-                            org.SenApp.model.Usuario.class)
+                            Usuario.class)
                     .setParameter("email", email)
                     .setParameter("con", contraseña)
                     .uniqueResult();
             if (entity != null) {
                 System.out.println("Inicio de sesión exitoso. ¡Bienvenido " + entity.getNombre() + "!");
-                return new app.Usuario(email, contraseña, entity.getNombre());
+                return new Usuario(email, contraseña, entity.getNombre());
             } else {
                 System.out.println("Correo o contraseña incorrectos.");
                 return null;

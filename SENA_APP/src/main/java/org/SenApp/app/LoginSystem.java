@@ -2,14 +2,16 @@ package org.SenApp.app;
 
 import java.util.Scanner;
 
-import SistemaReportes.Reportes;
-import lecciones.LeccionesApp;
+import org.SenApp.SistemaReportes.Reportes;
+import org.SenApp.lecciones.LeccionesApp;
+import org.SenApp.model.GestorUsuarios;
+import org.SenApp.model.Usuario;
 
 
 public class LoginSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        app.GestorUsuarios gestor = new app.GestorUsuarios();
+        GestorUsuarios gestor = new GestorUsuarios();
 
         while (true) {
             System.out.println("Menú Principal");
@@ -30,7 +32,7 @@ public class LoginSystem {
                 String email = scanner.nextLine();
                 System.out.print("Contraseña: ");
                 String contraseña = scanner.nextLine();
-                app.Usuario usuario = gestor.iniciarSesion(email, contraseña);
+                Usuario usuario = gestor.iniciarSesion(email, contraseña);
                 if (usuario != null) {
                     Reportes.guardarProgreso(usuario, "test_manual", 10, 10); // prueba para verificar que si se guarden datos
                     LeccionesApp.iniciar(usuario);

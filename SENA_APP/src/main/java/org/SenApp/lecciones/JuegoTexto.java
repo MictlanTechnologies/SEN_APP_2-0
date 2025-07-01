@@ -1,7 +1,7 @@
-package lecciones;
+package org.SenApp.lecciones;
 
-import SistemaReportes.Reportes;
-import app.Usuario;
+import org.SenApp.SistemaReportes.Reportes;
+import org.SenApp.model.Usuario;
 
 import java.util.Random;
 import java.util.Scanner;

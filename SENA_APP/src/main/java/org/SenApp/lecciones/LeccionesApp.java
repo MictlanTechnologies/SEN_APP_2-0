@@ -1,13 +1,14 @@
-package lecciones;
+package org.SenApp.lecciones;
 
-import app.Usuario;
+import org.SenApp.model.Usuario;
+
 import java.util.Scanner;
 
 public class LeccionesApp {
     public static void iniciar(Usuario usuario) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Lecciones de Lengua de Señas");
-        System.out.println("Bienvenido, " + usuario.getNombreUsuario() + "!");
+        System.out.println("Bienvenido, " + usuario.getNombre() + "!");
 
         while (true) {
             System.out.println("\nSeleccione una opción:");
@@ -21,16 +22,16 @@ public class LeccionesApp {
 
             switch (opcion) {
                 case "1":
-                    lecciones.ModuloBasico.mostrarLecciones();
+                    org.SenApp.lecciones.ModuloBasico.mostrarLecciones();
                     break;
                 case "2":
-                    lecciones.ModuloIntermedio.mostrarLecciones();
+                    org.SenApp.lecciones.ModuloIntermedio.mostrarLecciones();
                     break;
                 case "3":
-                    lecciones.ModuloAvanzado.mostrarLecciones();
+                    org.SenApp.lecciones.ModuloAvanzado.mostrarLecciones();
                     break;
                 case "4":
-                    lecciones.Extras.mostrarExtras(usuario);
+                    org.SenApp.lecciones.Extras.mostrarExtras(usuario);
                     break;
                 case "5":
                     return;

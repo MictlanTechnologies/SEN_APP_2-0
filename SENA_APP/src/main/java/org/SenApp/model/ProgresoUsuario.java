@@ -13,7 +13,7 @@ public class ProgresoUsuario {
 
     @ManyToOne
     @JoinColumn(name = "Usuario_ID")
-    private app.Usuario usuario;
+    private Usuario usuario;
 
     @Column(name = "Estado")
     private String estado;
@@ -30,7 +30,7 @@ public class ProgresoUsuario {
     public ProgresoUsuario() {
     }
 
-    public ProgresoUsuario(app.Usuario usuario, int puntuacion) {
+    public ProgresoUsuario(Usuario usuario, int puntuacion) {
         this.usuario = usuario;
         this.puntuacion = puntuacion;
         this.estado = "completado";

@@ -1,4 +1,4 @@
-package lecciones;
+package org.SenApp.lecciones;
 
 import java.util.Scanner;
 

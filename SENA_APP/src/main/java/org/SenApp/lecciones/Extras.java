@@ -1,6 +1,6 @@
-package lecciones;
+package org.SenApp.lecciones;
 
-import app.Usuario;
+import org.SenApp.model.Usuario;
 
 import java.util.Scanner;
 
@@ -33,4 +33,5 @@ public class Extras {
             }
         }
     }
+
 }

@@ -1,7 +1,9 @@
 package org.SenApp.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.Setter;
+
 
 @Entity
 @Table(name = "usuarios")
@@ -66,5 +68,4 @@ public class Usuario {
     public String getNivel() {
         return nivel;
     }
-
 }
