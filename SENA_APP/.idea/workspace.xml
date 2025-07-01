@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65b737f4-7406-40d9-9ae6-04afae2f8676" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/SistemaReportes/Reportes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/SistemaReportes/Reportes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/SistemaReportes/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/Util/ReadUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/Util/readUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/app/LoginSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/app/LoginSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/app/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/Cuestionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/Cuestionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/EjercicioInteractivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/EjercicioInteractivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/Extras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/Extras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/JuegoTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/JuegoTexto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/LeccionesApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/LeccionesApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloAvanzado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloAvanzado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloBasico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloBasico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloIntermedio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/lecciones/ModuloIntermedio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/model/GestorUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/model/GestorUsuarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/model/ProgresoUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/model/ProgresoUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/SenApp/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SenApp/app/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2zGcVhOs1WZhpPDdU78CdCNAbwR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LoginSystem.executor": "Run",
     "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -54,26 +45,6 @@
     "onboarding.tips.debug.path": "C:/SENA_app_/SENA_APP/src/main/java/org/Main.java"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.SenApp.app.Main" />
-      <module name="SENA_APP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.SenApp.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="65b737f4-7406-40d9-9ae6-04afae2f8676" name="Changes" comment="" />
