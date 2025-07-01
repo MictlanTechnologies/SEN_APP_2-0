@@ -1,10 +1,10 @@
 package org.SenApp.lecciones;
 
-import java.util.Scanner;
+import org.SenApp.Util.readUtil;
 
 public class ModuloAvanzado {
     public static void mostrarLecciones() {
-        Scanner scanner = new Scanner(System.in);
+        var scanner = readUtil.getInstance().getScanner();
         while (true) {
             System.out.println(" Módulos Avanzados");
             System.out.println("1. Conversaciones Completas");

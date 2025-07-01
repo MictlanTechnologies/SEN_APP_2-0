@@ -1,13 +1,13 @@
 package org.SenApp.lecciones;
 
 import org.SenApp.SistemaReportes.Reportes;
-import java.util.Scanner;
+import org.SenApp.Util.readUtil;
 
 import static org.SenApp.lecciones.JuegoTexto.usuario;
 
 public class EjercicioInteractivo {
     public static void iniciar() {
-        Scanner scanner = new Scanner(System.in);
+        var scanner = readUtil.getInstance().getScanner();
         int puntuacion = 0;
 
         System.out.println("EJERCICIOS INTERACTIVOS");

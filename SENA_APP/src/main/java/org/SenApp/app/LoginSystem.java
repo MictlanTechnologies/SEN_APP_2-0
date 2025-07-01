@@ -1,7 +1,6 @@
 package org.SenApp.app;      // ← ajústalo si tu jerarquía real difiere
 
-import java.util.Scanner;
-
+import org.SenApp.Util.readUtil;
 import org.SenApp.SistemaReportes.Reportes;
 import org.SenApp.Util.HibernateUtil;
 import org.SenApp.model.Usuario;          // DAO dedicado a Usuario
@@ -17,10 +16,8 @@ import org.SenApp.lecciones.LeccionesApp;
  *    en la tabla de progreso (Reportes).
  */
 public final class LoginSystem {
-
-    // Reutilizamos un único Scanner para todo el ciclo de vida.
-    private static final Scanner SC = new Scanner(System.in);
-
+    // Utilidad para lectura desde consola
+    private static final readUtil RU = readUtil.getInstance();
     public static void main(String[] args) {
         /* ─────────────────────── Bootstrap de Hibernate ─────────────────────── */
         // Asegúrate de que HibernateUtil haya inicializado el SessionFactory
@@ -46,7 +43,7 @@ public final class LoginSystem {
             System.out.println( "2. Iniciar sesión");
             System.out.println("3. Salir");
             System.out.print("Elige una opción: ");
-            String opcion = SC.nextLine().trim();
+            String opcion = RU.read().trim();
 
             switch (opcion) {
                 case "1" -> crearCuenta(gestor);
@@ -60,7 +57,7 @@ public final class LoginSystem {
         }
 
         /* ────────────────────────── Limpieza final ─────────────────────────── */
-        SC.close();
+        RU.getScanner().close();
         HibernateUtil.getSession(); // cierra el SessionFactory
     }
 
@@ -70,10 +67,10 @@ public final class LoginSystem {
 
     private static void crearCuenta(GestorUsuarios gestor) {
         System.out.print("Correo: ");
-        String email = SC.nextLine().trim();
+        String email = RU.read().trim();
 
         System.out.print("Contraseña: ");
-        String contrasena = SC.nextLine();
+        String contrasena = RU.read();
 
         try {
             gestor.registrar(email, contrasena);
@@ -85,10 +82,10 @@ public final class LoginSystem {
 
     private static void iniciarSesion(GestorUsuarios gestor) {
         System.out.print("Correo: ");
-        String email = SC.nextLine().trim();
+        String email = RU.read().trim();
 
         System.out.print("Contraseña: ");
-        String contrasena = SC.nextLine();
+        String contrasena = RU.read();
 
         Usuario usuario = gestor.iniciarSesion(email, contrasena);
         if (usuario == null) {

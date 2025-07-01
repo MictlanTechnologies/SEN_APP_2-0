@@ -4,13 +4,13 @@ import org.SenApp.SistemaReportes.Reportes;
 import org.SenApp.model.Usuario;
 
 import java.util.Random;
-import java.util.Scanner;
+import org.SenApp.Util.readUtil;
 
 public class JuegoTexto {
     public static Usuario usuario;
 
     public static void iniciar() {
-        Scanner scanner = new Scanner(System.in);
+        var scanner = readUtil.getInstance().getScanner();
         Random random = new Random();
         int puntuacion = 0;
 

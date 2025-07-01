@@ -1,10 +1,10 @@
 package org.SenApp.lecciones;
 
-import java.util.Scanner;
+import org.SenApp.Util.readUtil;
 
 public class ModuloIntermedio {
     public static void mostrarLecciones() {
-        Scanner scanner = new Scanner(System.in);
+        var scanner = readUtil.getInstance().getScanner();
         while (true) {
             System.out.println("Módulos Intermedios");
             System.out.println("1. Expresiones Cotidianas");

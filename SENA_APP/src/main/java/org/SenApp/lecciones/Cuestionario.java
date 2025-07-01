@@ -1,6 +1,6 @@
 package org.SenApp.lecciones;
 
-import java.util.Scanner;
+import org.SenApp.Util.readUtil;
 
 public class Cuestionario {
     private static String[] preguntas = {
@@ -18,7 +18,7 @@ public class Cuestionario {
     private static int[] respuestasCorrectas = {2, 1, 2};
 
     public static int iniciarCuestionario() {
-        Scanner scanner = new Scanner(System.in);
+        var scanner = readUtil.getInstance().getScanner();
         int puntuacion = 0;
 
         System.out.println("Comenzando Cuestionario");

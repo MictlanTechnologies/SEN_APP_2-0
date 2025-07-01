@@ -2,11 +2,11 @@ package org.SenApp.lecciones;
 
 import org.SenApp.model.Usuario;
 
-import java.util.Scanner;
+import org.SenApp.Util.readUtil;
 
 public class Extras {
     public static void mostrarExtras(Usuario usuario) {
-        Scanner scanner = new Scanner(System.in);
+        var scanner = readUtil.getInstance().getScanner();
         while (true) {
             System.out.println("\n--- Extras ---");
             System.out.println("1. Ejercicios Interactivos");

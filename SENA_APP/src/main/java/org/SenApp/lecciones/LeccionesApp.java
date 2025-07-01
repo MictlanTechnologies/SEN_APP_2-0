@@ -2,11 +2,11 @@ package org.SenApp.lecciones;
 
 import org.SenApp.model.Usuario;
 
-import java.util.Scanner;
+import org.SenApp.Util.readUtil;
 
 public class LeccionesApp {
     public static void iniciar(Usuario usuario) {
-        Scanner scanner = new Scanner(System.in);
+        var scanner = readUtil.getInstance().getScanner();
         System.out.println("Lecciones de Lengua de Señas");
         System.out.println("Bienvenido, " + usuario.getNombre() + "!");
 
