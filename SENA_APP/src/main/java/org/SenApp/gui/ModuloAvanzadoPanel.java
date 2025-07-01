@@ -32,7 +32,7 @@ public class ModuloAvanzadoPanel extends JPanel {
     }
     private void mostrarConversaciones() {
         Map<String, String> vids = new LinkedHashMap<>();
-        vids.put("Conversaci\u00f3n 1", "/videos/avanzado/conversacion1.mp4");
+        vids.put("Conversaci\u00f3n 1", "/recursosGraficos/Modulo Intermedio/Conversacion 1.mp4");
         vids.put("Conversaci\u00f3n 2", "/videos/avanzado/conversacion2.mp4");
         VideoLessonPanel p = new VideoLessonPanel(frame, cards, container,
                 "Conversaciones Completas", vids, "avanzado");
